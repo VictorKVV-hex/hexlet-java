@@ -1,6 +1,8 @@
 plugins {
     id 'java'
     id 'application'
+    id 'se.patrikerdes.use-latest-versions' version '0.2.18'
+    id 'com.github.ben-manes.versions' version '0.21.0'
 }
 
 group = 'org.example'
@@ -11,6 +13,7 @@ repositories {
 }
 
 dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
 }
